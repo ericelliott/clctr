@@ -1,4 +1,4 @@
 clctr
 =====
 
-Event emitting collections with iterators (like Backbone.Collections).
+Event emitting collections with iterators (like Backbone.Collection).
