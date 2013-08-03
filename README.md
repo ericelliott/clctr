@@ -6,6 +6,19 @@ Event emitting collections with iterators (like Backbone.Collection).
 Warning: Developer preview release. Lots of broken stuff, I'm sure.
 
 
+# Events
+
+```js
+var co = require('./clctr.js');
+var c = co();
+
+c.on('set', function () { console.log([].slice.call(arguments)); });
+
+c.set('bar', 'baz');
+// [ { name: 'bar', value: 'baz', previousValue: undefined } ]
+```
+
+
 ## contains(list, value):Boolean
 
 Checks if collection contains value.
@@ -166,14 +179,3 @@ some(obj, isNumber);      // true
 some(obj, isString);      // true
 ```
 
-# Events
-
-```js
-var co = require('./clctr.js');
-var c = co();
-
-c.on('set', function () { console.log([].slice.call(arguments)); });
-
-c.set('bar', 'baz');
-// [ { name: 'bar', value: 'baz', previousValue: undefined } ]
-```
