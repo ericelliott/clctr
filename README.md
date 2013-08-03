@@ -1,4 +1,4 @@
 clctr
 =====
 
-A brand new rewrite of clctr. Now with MOUT.js goodness.
+Event emitting collections with iterators (like Backbone.Collections).
