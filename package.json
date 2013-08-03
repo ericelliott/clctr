@@ -1,0 +1,35 @@
+{
+  "name": "clctr",
+  "version": "0.0.1",
+  "description": "Event emitting collections with iterators (like Backbone.Collection).",
+  "main": "clctr.js",
+  "dependencies": {
+    "mout": "~0.6.0",
+    "stampit": "~0.5.1"
+  },
+  "scripts": {
+    "test": "node ./test/runtests.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dilvie/clctr.git"
+  },
+  "keywords": [
+    "collection",
+    "collections",
+    "iterator",
+    "iterators",
+    "functional",
+    "events",
+    "data",
+    "backbone"
+  ],
+  "author": "Eric Elliott",
+  "license": "MIT",
+  "readmeFilename": "README.md",
+  "devDependencies": {
+    "grunt": "~0.4.1",
+    "grunt-contrib-jshint": "~0.6.2",
+    "tape": "~1.0.4"
+  }
+}
