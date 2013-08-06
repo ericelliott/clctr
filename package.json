@@ -1,6 +1,6 @@
 {
   "name": "clctr",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Event emitting collections with iterators (like Backbone.Collection).",
   "main": "clctr.js",
   "dependencies": {
