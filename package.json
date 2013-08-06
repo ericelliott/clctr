@@ -5,7 +5,8 @@
   "main": "clctr.js",
   "dependencies": {
     "mout": "~0.6.0",
-    "stampit": "~0.5.1"
+    "stampit": "~0.5.1",
+    "cuid": "~1.2.1"
   },
   "scripts": {
     "test": "node ./test/runtests.js"

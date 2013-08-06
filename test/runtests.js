@@ -1,31 +1,31 @@
 'use strict';
-var collection = require('../clctr.js'),
+var model = require('../clctr.js').model,
   test = require('tape');
 
 test('.contains()', function (t) {
-  var c = collection({name: 'test'});
+  var myModel = model({name: 'test'});
 
-  t.ok(c.contains('test'),
+  t.ok(myModel.contains('test'),
     'should return true if a the object contains the value.');
 
   t.end();
 });
 
-test('.hasOwn()', function (t) {
-  var c = collection({name: 'test'});
+test('.get()', function (t) {
+  var myModel = model({name: 'test'});
 
-  t.ok(c.hasOwn('name'),
-    'should return true if the instance has the named property.');
+  t.ok(myModel.get('id'),
+    'should return the value of the given named property.');
 
   t.end();
 });
 
 test('.set()', function (t) {
-  var c = collection({'name': 'old'});
+  var myModel = model({'name': 'old'});
 
-  c.set({name: 'value'});
+  myModel.set({name: 'value'});
 
-  t.ok(c.name, 'value',
+  t.ok(myModel.name, 'value',
     'should set property.');
 
   t.end();
