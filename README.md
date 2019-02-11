@@ -3,7 +3,7 @@ clctr
 
 Event emitting collections with iterators (like Backbone.Collection).
 
-Warning: Developer preview release. Lots of broken stuff, I'm sure.
+## Status - DEPRECATED
 
 
 # Events
